@@ -74,7 +74,23 @@ export const ProfileInfo = styled.div`
   }
 `;
 
-export const BottomMenu = styled.div``;
+export const BottomMenu = styled.div`
+  /* inserindo na parte inferior da tela */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+
+  background: var(--primary);
+  width: 100%;
+  border-top: 1px solid var(--outline);
+
+  display: flex;
+  justify-content: space-between;
+
+  /* barra inferior mudando de tamanho conforme o tamanho da tela */
+  padding: 8px min(46px, max(10vw, 10px));
+`;
 
 const iconCSS = css`
   width: 31px;
