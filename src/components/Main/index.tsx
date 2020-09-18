@@ -1,11 +1,30 @@
 import React from 'react';
 
-import { Container } from './styles';
+import { Container, Header, BackIcon, ProfileInfo } from './styles';
 
 const Main: React.FC = () => {
   return (
     <Container>
-      <h1>Main</h1>
+      <Header>
+        <button>
+          <BackIcon />
+        </button>
+
+        <ProfileInfo>
+          <strong>Afonso Machado</strong>
+          <span>821 Tweets</span>
+        </ProfileInfo>
+      </Header>
+
+      {/* <ProfilePage /> */}
+
+      {/* Aparece somente no mobile */}
+      {/* <BottomMenu>
+        <HomeIcon />
+        <SearchIcon />
+        <BellIcon />
+        <EmailIcon />
+      </BottomMenu> */}
     </Container>
   );
 };
