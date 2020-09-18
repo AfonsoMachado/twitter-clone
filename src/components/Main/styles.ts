@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { ArrowLeft } from '../../styles/Icons';
 
 export const Container = styled.div`
   display: flex;
@@ -17,6 +18,7 @@ export const Container = styled.div`
 
 export const Header = styled.div`
   /* preso na parte de cima da tela */
+  z-index: 2;
   position: sticky;
 
   top: 0;
@@ -43,6 +45,11 @@ export const Header = styled.div`
   }
 `;
 
-export const BackIcon = styled.div``;
+export const BackIcon = styled(ArrowLeft)`
+  width: 24px;
+  height: 24px;
+
+  fill: var(--twitter);
+`;
 
 export const ProfileInfo = styled.div``;
