@@ -1,5 +1,11 @@
 import styled from 'styled-components';
-import { ArrowLeft } from '../../styles/Icons';
+import {
+  ArrowLeft,
+  Home,
+  Search,
+  Notifications,
+  Email,
+} from '../../styles/Icons';
 
 export const Container = styled.div`
   display: flex;
@@ -67,3 +73,13 @@ export const ProfileInfo = styled.div`
     color: var(--gray);
   }
 `;
+
+export const BottomMenu = styled.div``;
+
+export const HomeIcon = styled(Home)``;
+
+export const SearchIcon = styled(Search)``;
+
+export const BellIcon = styled(Notifications)``;
+
+export const EmailIcon = styled(Email)``;
