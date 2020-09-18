@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import {
   ArrowLeft,
   Home,
@@ -76,10 +76,31 @@ export const ProfileInfo = styled.div`
 
 export const BottomMenu = styled.div``;
 
-export const HomeIcon = styled(Home)``;
+const iconCSS = css`
+  width: 31px;
+  height: 31px;
 
-export const SearchIcon = styled(Search)``;
+  cursor: pointer;
+  fill: var(--gray);
 
-export const BellIcon = styled(Notifications)``;
+  &:hover,
+  &.active {
+    fill: var(--twitter);
+  }
+`;
 
-export const EmailIcon = styled(Email)``;
+export const HomeIcon = styled(Home)`
+  ${iconCSS}
+`;
+
+export const SearchIcon = styled(Search)`
+  ${iconCSS}
+`;
+
+export const BellIcon = styled(Notifications)`
+  ${iconCSS}
+`;
+
+export const EmailIcon = styled(Email)`
+  ${iconCSS}
+`;

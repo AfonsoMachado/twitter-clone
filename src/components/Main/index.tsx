@@ -30,7 +30,7 @@ const Main: React.FC = () => {
 
       {/* Aparece somente no mobile */}
       <BottomMenu>
-        <HomeIcon />
+        <HomeIcon className="active" />
         <SearchIcon />
         <BellIcon />
         <EmailIcon />
