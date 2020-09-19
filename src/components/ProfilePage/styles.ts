@@ -2,9 +2,32 @@ import styled, { css } from 'styled-components';
 
 import { LocationOn, Cake } from '../../styles/Icons';
 
-export const Container = styled.div``;
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
 
-export const Banner = styled.div``;
+  max-height: 100%;
+  overflow-y: auto;
+
+  /* firefox */
+  scrollbar-width: none;
+  /* chrome */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+`;
+
+export const Banner = styled.div`
+  /* não diminui o tamanho / nao encolhe */
+  flex-shrink: 0;
+
+  width: 100%;
+  /* tamanho dinamico do banner */
+  height: min(33vw, 199px);
+
+  background: var(--twitter);
+  position: relative;
+`;
 
 export const Avatar = styled.div``;
 
