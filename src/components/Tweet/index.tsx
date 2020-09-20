@@ -1,6 +1,21 @@
 import React from 'react';
 
-import { Container } from './styles';
+import {
+  Container,
+  Retweeted,
+  RetweetIcon,
+  Body,
+  Avatar,
+  Content,
+  Header,
+  Dot,
+  Description,
+  ImageContent,
+  Icons,
+  Status,
+  CommentIcon,
+  LikeIcon,
+} from './styles';
 
 const Tweet: React.FC = () => {
   return (
