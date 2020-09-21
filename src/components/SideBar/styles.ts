@@ -75,6 +75,10 @@ export const Body = styled.div`
   padding: 57px 24px 200px;
   margin-top: 3px;
 
+  /* mantendo fixado na tela independente do scroll
+  position: sticky;
+  top: 0; */
+
   > div + div {
     margin-top: 15px;
   }
