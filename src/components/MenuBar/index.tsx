@@ -1,11 +1,23 @@
 import React from 'react';
 
-import { Container } from './styles';
+import Button from '../Button';
+
+import {
+  Container,
+  Topside,
+  Logo,
+  MenuButton,
+  HomeIcon,
+  BellIcon,
+  EmailIcon,
+  FavoriteIcon,
+  ProfileIcon,
+} from './styles';
 
 const MenuBar: React.FC = () => {
   return (
     <Container>
-      <TopSide>
+      <Topside>
         <Logo />
 
         <MenuButton>
@@ -32,7 +44,7 @@ const MenuBar: React.FC = () => {
         <Button>
           <span>Tweetar</span>
         </Button>
-      </TopSide>
+      </Topside>
     </Container>
   );
 };

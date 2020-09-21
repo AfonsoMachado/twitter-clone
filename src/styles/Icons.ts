@@ -13,4 +13,5 @@ export { Chat } from 'styled-icons/heroicons-outline';
 export { Retweet } from 'styled-icons/evil';
 export { Retweet as Retweet2 } from 'styled-icons/fa-solid';
 export { ShareAlt } from 'styled-icons/boxicons-regular';
+export { Twitter } from 'styled-icons/boxicons-logos';
 // export { RocketseatIcon as Rocketseat } from '../components/RocketseatIcon';

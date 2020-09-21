@@ -132,8 +132,8 @@ export const Icons = styled.div`
   width: 100%; /** Mobile */
 
   /* Não mobile */
-  @media (min-width: 400px) {
-    width: 63%;
+  @media (min-width: 500px) {
+    width: 83%;
   }
 
   > div {
