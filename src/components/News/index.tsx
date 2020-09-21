@@ -5,7 +5,8 @@ import { Container } from './styles';
 const News: React.FC = () => {
   return (
     <Container>
-      <h1>News</h1>
+      <span>Assuntos do momento em Brasil</span>
+      <strong>Bootcamp da Rocketseat</strong>
     </Container>
   );
 };
