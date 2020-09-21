@@ -10,13 +10,70 @@ import {
   Twitter,
 } from '../../styles/Icons';
 
-export const Container = styled.div``;
+export const Container = styled.div`
+  display: none;
 
-export const Topside = styled.div``;
+  /* Aparece somente a partir de 400px  */
+  @media (min-width: 500px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
-export const Logo = styled.div``;
+    /* SEE */
+    position: sticky;
+    top: 0;
+    left: 0;
 
-export const MenuButton = styled.div``;
+    padding: 9px 19px 20px;
+
+    /* barra fixada na tela */
+    /* SEE */
+    max-height: 100vh;
+    overflow-y: auto;
+  }
+`;
+
+export const Topside = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 1280px) {
+    align-items: flex-start;
+  }
+`;
+
+export const Logo = styled(Twitter)`
+  width: 41px;
+  height: 41px;
+
+  > path {
+    fill: var(--twitter);
+  }
+
+  margin-bottom: 20px;
+`;
+
+export const MenuButton = styled.div`
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+
+  > span {
+    display: none;
+  }
+
+  /* os textos só aparecem em telas grandes */
+  @media (min-width: 1280px) {
+    > span {
+      display: inline;
+      margin-left: 19px;
+
+      font-weight: bold;
+      font-size: 19px;
+    }
+  }
+`;
 
 const iconCSS = css`
   flex-shrink: 0;
