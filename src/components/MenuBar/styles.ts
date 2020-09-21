@@ -51,7 +51,12 @@ export const Logo = styled(Twitter)`
     fill: var(--twitter);
   }
 
+  margin-left: 5px;
   margin-bottom: 20px;
+
+  @media (min-width: 1280px) {
+    margin-left: 10px;
+  }
 `;
 
 export const MenuButton = styled.button`
