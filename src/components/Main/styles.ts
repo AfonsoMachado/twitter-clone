@@ -91,6 +91,7 @@ export const BottomMenu = styled.div`
   /* barra inferior mudando de tamanho conforme o tamanho da tela */
   padding: 8px min(46px, max(10vw, 10px));
 
+  /* A partir de 500px o BottomMenu é oculto */
   @media (min-width: 500px) {
     display: none;
   }
