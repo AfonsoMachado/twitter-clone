@@ -19,12 +19,15 @@ const SideBar: React.FC = () => {
       </SearchWrapper>
 
       <Body>
-        <p>
-          <List
-            title="Talvez você curta"
-            elements={[<h1>Teste</h1>, <h1>Teste</h1>, <h1>Teste</h1>]}
-          />
-        </p>
+        <List
+          title="Talvez você curta"
+          elements={[<h1>Teste</h1>, <h1>Teste</h1>, <h1>Teste</h1>]}
+        />
+
+        <List
+          title="Talvez você curta"
+          elements={[<h1>Teste</h1>, <h1>Teste</h1>, <h1>Teste</h1>]}
+        />
       </Body>
     </Container>
   );
