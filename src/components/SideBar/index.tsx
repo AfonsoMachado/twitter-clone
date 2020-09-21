@@ -1,5 +1,7 @@
 import React from 'react';
 
+import List from '../List';
+
 import {
   Container,
   SearchWrapper,
@@ -18,9 +20,10 @@ const SideBar: React.FC = () => {
 
       <Body>
         <p>
-          {
-            'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus illo maxime est delectus, neque commodi quae reiciendis, autem praesentium atque perferendis consequatur fuga dolores recusandae odit dolorum saepe consequuntur a.'
-          }
+          <List
+            title="Talvez você curta"
+            elements={[<h1>Teste</h1>, <h1>Teste</h1>, <h1>Teste</h1>]}
+          />
         </p>
       </Body>
     </Container>
