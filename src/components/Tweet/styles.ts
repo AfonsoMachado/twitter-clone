@@ -1,6 +1,12 @@
 import styled, { css } from 'styled-components';
 
-import { Chat, Favorite, Retweet, Retweet2 } from '../../styles/Icons';
+import {
+  Chat,
+  Favorite,
+  Retweet,
+  Retweet2,
+  ShareAlt,
+} from '../../styles/Icons';
 
 export const Container = styled.div`
   display: flex;
@@ -126,7 +132,7 @@ export const Icons = styled.div`
   width: 100%; /** Mobile */
 
   /* Não mobile */
-  @media (min-width: 330px) {
+  @media (min-width: 400px) {
     width: 63%;
   }
 
@@ -170,6 +176,12 @@ export const Status = styled.div`
       fill: var(--like);
     }
   }
+
+  &:nth-child(4) {
+    > svg path {
+      color: var(--gray);
+    }
+  }
 `;
 
 const iconCSS = css`
@@ -186,5 +198,9 @@ export const RetweetIcon = styled(Retweet2)`
 `;
 
 export const LikeIcon = styled(Favorite)`
+  ${iconCSS}
+`;
+
+export const ShareIcon = styled(ShareAlt)`
   ${iconCSS}
 `;
