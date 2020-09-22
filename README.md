@@ -1,4 +1,4 @@
-# UI Clone: Discord
+# UI Clone: Twitter
 
 <p align="center">:rocket: Clone da interface gráfica da página de perfil do Twitter, implementado em React.
  Aplicação feita seguindo passos apresentados no vídeo tutorial da <a href="https://www.youtube.com/watch?v=K-8z_4xvT3o">RocketSeat</a>.
